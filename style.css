@@ -100,6 +100,7 @@ hr {
     max-width: 940px;
     margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5)
 }
 
 .userCard .welcome {
@@ -186,4 +187,39 @@ hr {
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+
+body > main {
+    margin-top: -340px;
+}
+
+body > main > .downloadResume-Wrapper {
+    text-align: center;
+}
+
+body > main .downloadResume {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #CDCFD1;
+    display: inline-block;
+    background: #EFEFEF;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #3D4451;
+    margin: 32px 0;
+    transition: box-shadow 0.2s;
+}
+
+body > main .downloadResume:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+}
+
+body > main > .selfIntroduction {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
 }
