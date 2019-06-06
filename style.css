@@ -19,6 +19,20 @@ hr {
     border-top: 1px solid #DEDEDE;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -189,15 +203,15 @@ hr {
     vertical-align: top;
 }
 
-body > main {
+body>main {
     margin-top: -340px;
 }
 
-body > main > .downloadResume-Wrapper {
+body>main>.downloadResume-Wrapper {
     text-align: center;
 }
 
-body > main .downloadResume {
+body>main .downloadResume {
     font-size: 14px;
     line-height: 16px;
     padding: 21px 55px;
@@ -211,15 +225,89 @@ body > main .downloadResume {
     transition: box-shadow 0.2s;
 }
 
-body > main .downloadResume:hover {
-    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+body>main .downloadResume:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
-body > main > .selfIntroduction {
+body>main>.selfIntroduction {
     max-width: 940px;
     margin: 0 auto;
     text-align: center;
     font-family: kai;
     line-height: 1.8;
     font-size: 18px;
+}
+
+section.portfolio,
+section.skills {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+section.portfolio>h2,
+section.skills>h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+
+section.skills ol {
+    background: #FFF;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+section.skills ol>li {
+    float: left;
+    width: 48%;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+section.skills ol>li:nth-child(even) {
+    float: right;
+}
+
+section.skills .progressBar {
+    height: 3px;
+    background: #FAEAEA;
+    border-radius: 2px;
+    margin: 4px 0 35px;
+}
+
+section.skills .progressBar>.progress {
+    height: 100%;
+    width: 70%;
+    background: #E6686A;
+}
+
+section.portfolio nav {
+    text-align: center;
+}
+
+section.portfolio ol {
+    margin: 0 auto;
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.portfolio ol>li {
+    float: left;
+    margin-left: 40px;
+}
+
+section.portfolio ol>li:nth-child(1) {
+    margin-left: 0;
 }
