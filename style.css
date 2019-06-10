@@ -292,13 +292,21 @@ section.skills .progressBar>.progress {
     background: #E6686A;
 }
 
+section.portfolio {
+    text-align: center;
+    margin-bottom: 180px;
+}
+
 section.portfolio nav {
     text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
 }
 
 section.portfolio ol {
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: inline-block;
     vertical-align: top;
 }
@@ -306,8 +314,66 @@ section.portfolio ol {
 section.portfolio ol>li {
     float: left;
     margin-left: 40px;
+    cursor: pointer;
 }
 
-section.portfolio ol>li:nth-child(1) {
+section.portfolio ol>li:first-child {
     margin-left: 0;
+}
+
+section.portfolio .bar {
+    height: 5px;
+    width: 100%;
+    background: #FAEAEA;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 28px;
+}
+
+section.portfolio .bar .bar-inner {
+    height: 100%;
+    border-radius: 2px;
+    background: #E6686A;
+    transition: all 0.3s;
+}
+
+section.portfolio .bar.state-1 .bar-inner {
+    width: 40px;
+    margin-left: 0px;
+}
+
+section.portfolio .bar.state-2 .bar-inner {
+    width: 40px;
+    margin-left: 70px;
+}
+
+section.portfolio .bar.state-3 .bar-inner {
+    width: 95px;
+    margin-left: 145px;
+}
+
+section.portfolio .works {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 597px;
+}
+
+section.portfolio .works>.big,
+section.portfolio .works>.small {
+    position: absolute;
+}
+
+section.portfolio .works>.big {
+    top: 0;
+    left: 0;
+}
+
+section.portfolio .works>.small-1 {
+    top: 0;
+    left: 645px;
+}
+
+section.portfolio .works>.small-2 {
+    top: 312px;
+    left: 645px;
 }
